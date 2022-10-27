@@ -10,18 +10,19 @@ This package is formed by 4 scripts:
 - `splitter`: divide an ensemble into single xyz files.
 
 ---
----
+
 <br>
 
 ## To install 
 
-#### __Using pip__
----
+### __Using pip__
+
 ```bash 
 pip install Geometrical_Parameter
 ```
 
-#### __Form code__
+### __Form code__
+
 1. Clone this repository
 1. `cd geometrical_parameters`
 1. `pip install .`
