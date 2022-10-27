@@ -21,7 +21,7 @@ def setup_():
     setuptools.setup(
         name="Geometrical Parameter",
         version="1.0.0",
-        url="",
+        url="https://github.com/Asymmetric-Lab/Geometrical_Parameters",
         author="Asymmetric Lab development team",
         author_email="andrea.pellegrini15@unibo.it",
         maintainer="Asymmetric Lab team",
