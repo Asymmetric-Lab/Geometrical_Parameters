@@ -1,9 +1,14 @@
 """
-# Geometrical_Parameters
-Geometrical parameters from xyz files
+Geometrical_Parameters
+Geometrical parameters from xyz files. 
+
+To know how to use it, visit our github reopository: https://github.com/Asymmetric-Lab/Geometrical_Parameters
+
 """
 
 import setuptools
+
+
 # Chosen from http://www.python.org/pypi?:action=list_classifiers
 classifiers = """Development Status :: 5 - Production/Stable
 Environment :: Console
@@ -20,15 +25,15 @@ def setup_():
     doclines = __doc__.split("\n")
     setuptools.setup(
         name="Geometrical Parameter",
-        version="1.0.0",
+        version="1.0.0a",
         url="https://github.com/Asymmetric-Lab/Geometrical_Parameters",
         author="Asymmetric Lab development team",
         author_email="andrea.pellegrini15@unibo.it",
         maintainer="Asymmetric Lab team",
         maintainer_email="andrea.pellegrini15@unibo.it",
         license="MIT License",
-        description=doclines[0],
-        long_description="\n".join(doclines[2:]),
+        description=doclines,
+        # long_description='\n'.join(doclines),
         classifiers=classifiers.split("\n"),
         platforms=["Any."],
         packages=setuptools.find_packages(exclude=['*test*']),
