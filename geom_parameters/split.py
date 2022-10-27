@@ -1,6 +1,7 @@
 import argparse
 import os
-from functions import parse_xyz, mkdir
+from .func import *
+
 
 
 def parse():

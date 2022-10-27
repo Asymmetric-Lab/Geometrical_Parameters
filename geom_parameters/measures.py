@@ -1,5 +1,5 @@
 import argparse
-from functions import distance, angle, dihedral, parse_xyz, get_position, required_length
+from .func import *
 
 func = {
     2: distance,

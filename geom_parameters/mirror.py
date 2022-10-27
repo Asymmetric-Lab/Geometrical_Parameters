@@ -1,7 +1,8 @@
 import numpy as np
 import os
 import argparse
-from functions import parse_xyz
+from .func import *
+
 
 def parse():
     parser = argparse.ArgumentParser()

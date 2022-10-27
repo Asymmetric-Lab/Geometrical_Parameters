@@ -1,5 +1,6 @@
 import argparse, os
-from functions import required_length, sign, dihedral, parse_xyz, mkdir
+from .func import *
+
 
 
 def parse():

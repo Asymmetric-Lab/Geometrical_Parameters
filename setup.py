@@ -1,3 +1,8 @@
+"""
+# Geometrical_Parameters
+Geometrical parameters from xyz files
+"""
+
 import setuptools
 # Chosen from http://www.python.org/pypi?:action=list_classifiers
 classifiers = """Development Status :: 5 - Production/Stable
@@ -21,7 +26,7 @@ def setup_():
         author_email="andrea.pellegrini15@unibo.it",
         maintainer="Asymmetric Lab team",
         maintainer_email="andrea.pellegrini15@unibo.it",
-        license="BSD 3-Clause License",
+        license="MIT License",
         description=doclines[0],
         long_description="\n".join(doclines[2:]),
         classifiers=classifiers.split("\n"),
@@ -29,10 +34,10 @@ def setup_():
         packages=setuptools.find_packages(exclude=['*test*']),
         entry_points={
             'console_scripts': [
-                'measure=geom_parameters.scripts.measueres:ruler',
-                'mirror=geom_parameters.scripts.mirror:mirror',
-                'split=geom_parameters.scripts.split:splitter',
-                'sort_atropo=geom_parameters.scripts.sort_atropo:sorter',
+                'measure=geom_parameters.measures:ruler',
+                'mirror=geom_parameters.mirror:mirror',
+                'splitter=geom_parameters.split:splitter',
+                'sort_atropo=geom_parameters.sort_atropo:sorter',
             ]
         },
         install_requires=[
