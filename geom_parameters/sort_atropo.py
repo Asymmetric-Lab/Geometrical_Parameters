@@ -34,7 +34,7 @@ def sort(fname, index):
 
     mkdir(f'{fname}_neg')
     with open(os.path.join(f'{fname}_neg', f'{fname}_n.xyz'), 'w') as f:
-        f.write('\n'.join([poses[i] for i in p]))
+        f.write('\n'.join([poses[i] for i in n]))
     write_atropo(f'{fname}_neg', poses, n)
 
 
