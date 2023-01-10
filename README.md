@@ -15,13 +15,13 @@ This package is formed by 4 scripts:
 
 ## To install 
 
-### __Using pip__
+### _Using pip_
 
 ```bash 
 pip install Geometrical_Parameter
 ```
 
-### __Form code__
+### _Form code_
 
 1. Clone this repository
 1. `cd geometrical_parameters`
@@ -29,7 +29,7 @@ pip install Geometrical_Parameter
 1. When pulling the repository, hit the command `pip install --upgrade .`
 
 ---
-## __Usages__
+## Usages
 
 ### Measure package
 ```bash

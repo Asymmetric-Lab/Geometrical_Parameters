@@ -1,5 +1,5 @@
 import argparse, os
-from .func import *
+from const_func import mkdir, parse_xyz, sign
 
 
 
@@ -13,8 +13,8 @@ def parse():
 
 def write_atropo(d:str, poses:list, idxs:list):
     for idx, i in enumerate(idxs): 
-        with open(os.path.join(d, f'{poses[idx]}.xyz'), 'w') as f:
-            f.write(i)
+        with open(os.path.join(d, f'{str(idx)}.xyz'), 'w') as f:
+            f.write(poses[idx])
 
 
 def sort(fname, index):
@@ -22,7 +22,7 @@ def sort(fname, index):
     p, n = [], []
 
     for idx, geom in enumerate(poses):
-        if sign(index, geom) > 0:
+        if sign(index, geom, geom=True) > 0:
             p.append(idx)
         else:
             n.append(idx)
@@ -45,3 +45,5 @@ def sorter():
         sort(fname, args.index)
             
         
+if __name__ == "__main__":
+    sorter()

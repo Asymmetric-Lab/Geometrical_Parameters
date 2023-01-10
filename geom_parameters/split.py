@@ -1,6 +1,6 @@
 import argparse
 import os
-from .func import *
+from const_func import *
 
 
 

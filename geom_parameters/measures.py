@@ -1,5 +1,5 @@
 import argparse
-from .func import *
+from const_func import *
 
 func = {
     2: distance,

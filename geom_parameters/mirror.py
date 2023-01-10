@@ -1,7 +1,7 @@
 import numpy as np
 import os
 import argparse
-from .func import *
+from const_func import *
 
 
 def parse():

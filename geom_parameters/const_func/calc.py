@@ -73,8 +73,8 @@ def distance(p) -> float:
 
 
 
-def sign(indexes, geometry):
-    atoms = get_position(geometry, indexes)
+def sign(indexes, geometry, read:bool=False, geom:bool=False):
+    atoms = get_position(geometry, indexes, read, geom)
     dh = dihedral(atoms)
     print(np.sign(dh))
     return np.sign(dh)
